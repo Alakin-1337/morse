@@ -88,4 +88,4 @@ class TestMorse(unittest.TestCase):
 
     def test_whole_sentence(self):
         message = decode(".- .-.. .-.. / -.-- --- ..- / -. . . -.. / .. ... / -.-. --- -.. .")
-        self.assertEqual(message, "ALL YOU NEED IS CODE")
+        self.assertEqual(message, "ALL YOU NEED IS CODEE")
