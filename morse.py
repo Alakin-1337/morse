@@ -6,7 +6,7 @@ def decode(message):
     morses = message.split(" ")
     result = ""
     for key in morses:
-        result += morse_dict.get(key)
-    print(result)
+        result += morse_dict.get(key) or ""
+    return result
 
-sentence = decode(".- .-.. .-.. / -.-- --- ..- / -. . . -.. / .. ... / -.-. --- -.. .")
+#sentence = decode(".- .-.. .-.. / -.-- --- ..- / -. . . -.. / .. ... / -.-. --- -.. .")
